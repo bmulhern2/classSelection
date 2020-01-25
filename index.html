@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    } html {
+      text-align: center;
+      background: white;
+    } header {
+      background: orange;
+      color: white;
+    } button {
+      margin-top: 1vw;
+      height: 5vw;
+      width: 80vw;
+      background: purple;
+      color: white;
+    } #output {
+      margin-top: 2vw;
+      font-size: 8vw;
+      background: white;
+      color: purple;
+    }
+  </style>
+  <body>
+  <header>
+  <h1>Class Selection</h1>
+  </header>
+  <button onclick="class1();">Class 1</button>
+  <br>
+  <button onclick="class2();">Class 2</button>
+  <br>
+  <button onclick="class3();">Class 3</button>
+  <br>
+  <button onclick="class4();">Class 4</button>
+  <br>
+  <button onclick="class5();">Class 5</button>
+  <br>
+  <button onclick="unselect();">Unselect</button>
+  <div id="output"></div>
+  </body>
+  <script>
+    function class1() {
+      var output = document.querySelector('#output');
+      output.innerHTML = 'Class 1 Selected';
+    };
+    function class2() {
+      var output = document.querySelector('#output');
+      output.innerHTML = 'Class 2 Selected';
+    };
+    function class3() {
+      var output = document.querySelector('#output');
+      output.innerHTML = 'Class 3 Selected';
+    };
+    function class4() {
+      var output = document.querySelector('#output');
+      output.innerHTML = 'Class 4 Selected';
+    };
+    function class5() {
+      var output = document.querySelector('#output');
+      output.innerHTML = 'Class 5 Selected';
+    };
+    function unselect() {
+      var output = document.querySelector('#output');
+      output.innerHTML = '';
+    };
+  </script>
+</html>
